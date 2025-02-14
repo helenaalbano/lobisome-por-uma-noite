@@ -1,0 +1,78 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, #020202, #6e0909);
+
+}
+
+header {
+    background: linear-gradient(to right,#020202,  #330707);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+/* Estilizando a lista de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Tiny5", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header h1{
+    font-family: "Tiny5", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.cards-container {
+    display: grid; /* Organiza os cards em linha */
+    justify-content: center; /* Centraliza os cards na tela */
+    gap: 20px; /* Espaço entre os cards */
+    flex-wrap: wrap; /* Permite que quebrem para a linha de baixo se necessário */
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 250px;
+}
+
+.card {
+    width: 204px;
+    height: 304px;
+    background-color: #000000;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 0px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
