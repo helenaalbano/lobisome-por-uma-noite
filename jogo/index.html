@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Lobisomem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Jogo do Lobisomem</h1>
+
+    <div id="entrada">
+        <input type="text" id="nomeJogador" placeholder="Digite seu nome">
+        <button onclick="adicionarJogador()">Adicionar Jogador</button>
+    </div>
+
+    <h2>Jogadores na Sala:</h2>
+    <ul id="listaJogadores"></ul>
+
+    <button id="iniciarJogo" onclick="iniciarJogo()">Iniciar Jogo</button>
+
+    <div id="jogo" style="display: none;">
+        <h2 id="minhaCarta"></h2>
+        <p id="timer"></p>
+
+        <h3>Vote em um jogador:</h3>
+        <ul id="opcoesVoto"></ul>
+
+        <button onclick="finalizarVotacao()">Finalizar Votação</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

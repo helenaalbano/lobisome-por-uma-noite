@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar no Jogo</title>
+    <link rel="stylesheet" href="./entrar-no-jogo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao Jogo</h1>
+
+        <label for="nickname">Digite seu Nickname:</label>
+        <input type="text" id="nickname" placeholder="Seu nome no jogo">
+
+        <div class="options">
+            <button onclick="entrarPartidaPublica()">Entrar em Partida Pública</button>
+            <button onclick="mostrarCampoPrivado()">Entrar em Sala Privada</button>
+            <button onclick="mostrarCriarSala()">Criar uma Sala</button>
+        </div>
+
+        <div id="partidaPrivada" class="hidden">
+            <label for="codigoSala">Código da Sala:</label>
+            <input type="text" id="codigoSala" placeholder="Digite o código">
+            <button onclick="entrarSalaPrivada()">Entrar</button>
+        </div>
+
+        <div id="criarSala" class="hidden">
+            <button onclick="criarSalaComSenha()">Criar com Senha</button>
+            <button onclick="criarSalaSemSenha()">Criar sem Senha</button>
+        </div>
+
+        <div id="senhaSala" class="hidden">
+            <label for="senha">Digite a Senha:</label>
+            <input type="password" id="senha" placeholder="Senha da sala">
+            <button onclick="confirmarCriacaoSala()">Criar Sala</button>
+        </div>
+    </div>
+
+    <script src="./entrar-no-jogo.js"></script>
+</body>
+</html>
