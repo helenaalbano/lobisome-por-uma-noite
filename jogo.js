@@ -57,7 +57,7 @@ function distribuirCartas() {
 }
 
 function iniciarContagem() {
-    let tempo = 10;
+    let tempo = 180;
     let timerElement = document.getElementById("timer");
 
     let intervalo = setInterval(() => {

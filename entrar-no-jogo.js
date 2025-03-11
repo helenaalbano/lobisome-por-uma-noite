@@ -4,7 +4,7 @@ function entrarPartidaPublica() {
         alert("Por favor, insira seu nickname!");
         return;
     }
-    alert(`${nickname} entrou em uma partida pública!`);
+    window.location.href = "index.html";
 }
 
 function mostrarCampoPrivado() {
@@ -42,7 +42,7 @@ function criarSalaSemSenha() {
     alert(`${nickname} criou uma sala sem senha!`);
 }
 
-function confirmarCriacaoSala() {
+function CriacaoSala() {
     let nickname = document.getElementById("nickname").value;
     let senha = document.getElementById("senha").value;
     if (nickname === "" || senha === "") {
@@ -51,3 +51,7 @@ function confirmarCriacaoSala() {
     }
     alert(`${nickname} criou uma sala com senha: ${senha}`);
 }
+/*
+function salaCriada {
+    window.location.href = "index.html";
+}*/
